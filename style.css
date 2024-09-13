@@ -112,7 +112,7 @@ button#equal {
 }
 
 .calculator #display {
-  color: #0a1e23;
+  color: black;
 }
 
 .calculator button#clear {

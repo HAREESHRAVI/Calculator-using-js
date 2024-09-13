@@ -1,10 +1,8 @@
 const display = document.querySelector("#display");
 const buttons = document.querySelectorAll("button");
-
 buttons.forEach((item) => {
   item.onclick = () => handleInput(item.id);
 });
-
 document.addEventListener("keydown", (event) => {
   const key = event.key;
 
@@ -20,7 +18,6 @@ document.addEventListener("keydown", (event) => {
     handleInput("clear");
   }
 });
-
 function handleInput(input) {
   if (input == "clear") {
     display.innerText = "";
@@ -36,7 +33,6 @@ function handleInput(input) {
     display.innerText += input;
   }
 }
-
 const themeToggleBtn = document.querySelector(".theme-toggler");
 const calculator = document.querySelector(".calculator");
 const toggleIcon = document.querySelector(".toggler-icon");
